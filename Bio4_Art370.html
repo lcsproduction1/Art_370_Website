@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>LCS Bio</title>
+
+<style type='text/css'>
+    
+    /*Centers the page otherwise it gets all screwed up upon loading*/
+    #page_wrapper{
+            width: 1200px;
+            margin: 0px auto 0px auto;
+    }
+
+    body{
+            background-image: url(Images/BackgroundFolderBlue.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    
+    .purple_box{
+            width:100%;
+            height: 100%;
+            background-color: #484884;
+            border: 1px solid orange;
+    }
+    
+    
+    .header {
+            width: 1000px;
+            margin-left:70px;
+            padding: 20px 0px 0px 20px;
+        }
+    
+     /*styles for navigation LCS 270 website*/
+         ul.horiz_nav {
+            float: left;
+            list-style-type: none;
+            padding: 0px;
+            margin-left: 90px;
+            overflow: hidden;
+          }
+
+        ul.horiz_nav li {
+            float: left;  /*bit of magic - makes list horizontal */
+          }
+
+        ul.horiz_nav li a {
+            color:#9c9cc9;;
+            font:24px gillsans, sans-serif;
+            text-align: center;
+            padding: 0px 46px 0px 46px;
+            text-decoration: none;
+            display: block;  /*bit of magic - turns anchor into block element to fill up entire list item */
+          }
+
+        ul.horiz_nav li a:hover {
+            background-color: orange;
+            color: #fff;
+          }
+
+        /* unvisited link */
+        a:link {
+                color: #aaaaee;
+                text-decoration: none;
+            }
+	
+
+        p.ex4 {
+            font: 14px gillsans, sans-serif;
+            color: #484884;
+            font-style: normal;
+            text-align: left;
+            margin-top: 5px;
+            padding-top: 5px;
+            padding-right: 20px;
+            padding-bottom: 0px;
+            padding-left: 240px;
+        }
+
+        p.ex5{
+            color:#E6E6FA;
+            text-align:center;
+            background-color:rgba(255,0,255,0.3);
+            width:1180px;
+            height: 20px;
+            padding:10px;
+            margin-bottom:0px; /*made 0 so no margin at bottom of footer*/
+        }
+    
+        .ex6 {
+            font: 18px gillsans, sans-serif;
+            color: #E6E6FA;
+            text-align: center;
+            width:140px;
+            padding: 5px;
+            background-color: rgba(255,0,255,0.3);
+        }
+
+
+        .floating-box3 {
+            display: inline-block;
+            width: 800px;
+            height: 300px;
+            margin-top: 30px;
+            margin-left:125px;
+            padding: 20px;
+            font: 20px gillsans, sans-serif;
+            color: #E6E6FA;
+            font-style: normal;
+            text-align: left;
+            /*background-color: rgba(255,0,255,0.3);*/
+            background-color: #fff;
+            border: 2px solid orange;
+        }
+
+        .floating-box5{
+            float: left;
+            margin-top:60px;
+            margin-left: 90px;
+   
+        }
+    
+        .floating-box6{
+            display: inline-block;
+            float: left;
+            width: 150px;
+            height: auto;
+            margin: 0px;
+            padding: 30px 50px 30px 0px;
+            border-color: white;
+        }
+
+
+        .float_left{
+            float:left;
+            margin-top: 40px;/*pushed LCS logo down nicely*/
+            color:white;
+        }
+    
+        .clear_float{
+            clear: both;
+        }
+
+        #footer{
+            font: 18px gillsans, sans-serif;
+            margin-top: 60px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    
+
+</style>
+</head>
+
+<body>
+  <div id="page_wrapper">
+   
+    <div class="header">
+        <img class="float_left" src="Images/lcs.svg" alt='lcs' width='250' height=relative>
+   
+         <ul class="horiz_nav">
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="Print3_Art370.html">PRINT</a></li>
+         </ul>
+
+        <div class='floating-box5'><div class='ex6'>BIO &amp; CONTACT</div><img src='Images/SwirlLogo.png' alt='website' width='160' height=relative>
+        </div> 
+	</div><!--End of header-->
+      
+    <div class="purple_box"><!--position here so get space above purple box-->
+       
+        <div class="floating-box3"><div class="floating-box6"><img src='Images/Lindabiopic.jpg' alt='LINDA' width='200' height=relative></div>
+        <p class="ex4">Linda Schneider Singer has been a designer and content production manager for over 30 years.</p>
+        <p class="ex4">Her background includes design, branding and digital and print production including press checks. She specializes in digital print, collateral and web design. </p>
+        <p class="ex4">Linda works with her clients as a team member listening to their needs and providing solutions.</p>
+        <p class="ex4">Project involvement can be as an additional member of the client side, leading the project on her own from the initial consultation to the finished project or any aspect of the 
+        job as shown in her samples.</p> 
+        <p class="ex4">Linda is based in Glencoe, IL. She enjoys music, painting and teaching martial arts.</p>
+        <p class="ex4">CONTACT Linda at: <a href="mailto:LcsProduction@comcast.net">LcsProduction@comcast.net</a> to set up a meeting and discuss the needs of your company.</p>
+        </div>
+
+        <div id='footer'><p class='ex5'> Linda Schneider Singer Contact:&nbsp <a href="mailto:LcsProduction@comcast.net">LcsProduction@comcast.net</a></p>
+        </div>
+    </div><!--End of purple_box-->
+  
+    </div> <!--End of Page Wrapper-->
+</body>
+</html>
