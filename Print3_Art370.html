@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>     
+<head>
+
+<title>LCS Print</title>
+
+    <style type='text/css'>
+	 
+    /*Centers the page otherwise it gets all screwed up upon loading*/
+    #page_wrapper{
+        width: 1200px;
+        margin: 0px auto 0px auto;
+    }
+    
+    body{
+        background-image: url(Images/BackgroundFolderBlue.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+        
+    .purple_box{
+        width:100%;
+        height: 100%;
+        background-color: #484884;
+        border: 1px solid orange;
+    }
+        
+    .header {
+        width: 100%;
+        padding: 40px 0px 0px 20px;
+    }
+        
+     /*styles for navigation LCS 270 website*/
+     ul.horiz_nav {
+        float: left;
+        list-style-type: none;
+        padding: 0px;
+        margin-left: 90px;
+        overflow: hidden;
+      }
+      
+      ul.horiz_nav li {
+        float: left;  /*bit of magic - makes list horizontal */
+      }
+      
+      ul.horiz_nav li a {
+        color:#9c9cc9;;
+        font:24px gillsans, sans-serif;
+        text-align: center;
+        padding: 0px 46px 0px 46px;
+        text-decoration: none;
+        display: block;  /*bit of magic - turns anchor into block element to fill up entire list item */
+      }
+      
+      ul.horiz_nav li a:hover {
+        background-color: orange;
+        color: #fff;
+      }
+    
+    /* unvisited link */
+        a:link {
+            color: white;
+            text-decoration: none;
+        }
+        
+    h1{
+        font: 18px gillsans, sans-serif;
+        margin-right: 30px;
+        margin-top: 10px;
+        Margin-bottom: 10px;
+    }
+    h1{
+        font: 18px gillsans, sans-serif;
+        margin-right: 30px;
+        margin-top: 10px;
+        Margin-bottom: 10px;
+        color: #E6E6FA;
+        text-align: left;
+    }
+    h3{
+        font: 14px gillsans, sans-serif;
+        margin-right: 10px;
+        margin-top: 10px;
+        Margin-bottom: 10px;
+          color: #E6E6FA;
+        text-align: left;
+    }
+    p.ex1 {
+        font: 18px gillsans, sans-serif;
+        color:#E6E6FA;
+        height: 20px;
+        position: absolute;
+        padding: 10px;
+        top: 100px;
+        width: 125px;
+    }
+
+    p.ex3 {
+        font: 18px gillsans, sans-serif;
+        color: #E6E6FA;
+        font-style: normal;
+        text-align: center;
+        width:150px;
+        margin-top: 5px;
+        padding: 5px;
+        background-color: rgba(255,0,255,0.3);
+    }
+    p.ex4 {
+        font: 14px gillsans, sans-serif;
+        color: #E6E6FA;
+        font-style: normal;
+        text-align: left;
+        margin-top: 5px;
+        padding-top: 5px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        padding-left: 240px;
+    }
+    p.ex5{
+        float:right;
+        color:#E6E6FA;
+        text-align:center;
+        background-color:rgba(255,0,255,0.3);
+        width:1000px;
+        height: 20px;
+        padding:10px;
+        margin-bottom:100px;
+    }
+    .ex6 {
+        font: 18px gillsans, sans-serif;
+        color: #E6E6FA;
+        text-align: center;
+        width:140px;
+        padding: 5px;
+        background-color: rgba(255,0,255,0.3);
+    }
+
+    .floating-box2 {
+       float: right;
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        padding-left:0px;
+        clear:both;
+    }
+
+    .floating-box3 {
+        float: left;
+        display: inline-block;
+        width: 200px;
+        margin-top: 20px;
+        margin-left:20px;
+        padding: 5px;
+        color: #E6E6FA;
+        text-align: left;
+
+    }
+    .floating-box5{
+        float: left;
+        margin-top: 40px;
+        margin-left: 200px;
+    }
+
+    .float_left{
+        float:left;
+        margin-top: 40px;
+        color:white;
+    }
+  
+    .clear_float{
+        clear: both;
+    }
+
+    /*MORPH*/
+    .morph {
+      -webkit-transition: all 0.5s ease;
+         -moz-transition: all 0.5s ease;
+           -o-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+    }
+
+    .morph:active {
+      border-radius: 50%;
+      -webkit-transform: rotate(360deg);
+         -moz-transform: rotate(360deg);
+           -o-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+
+    #footer {
+        font: 18px gillsans, sans-serif;
+        color: #E6E6FA;
+        text-align:center;
+        margin-top: 20px;
+        padding:5px;
+        background-color:rgba(255,0,255,0.3);	 	
+    }
+
+</style>
+</head>
+
+<body>
+  <div id="page_wrapper">
+      
+     <!--HEADER OF PAGE-->   
+     <div class="header">
+        <img class="float_left" src='Images/lcs.svg' alt='lcs' width='250' height=relative>
+         <ul class="horiz_nav">
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="Bio4_Art370.html">BIO &amp; CONTACT</a></li>
+         </ul>
+         
+          <div class='floating-box5'><p class='ex6'>PRINT</p><img src='Images/SwirlPrint.png' alt='print' width='160' height=relative>
+          </div> 
+       </div><!--end of header-->  
+      
+    <!--MAIN SECTION OF PAGE-->   
+    <div class="purple_box"> <!--put in clear float if want only portion of purple box-->
+      
+        <div class='floating-box3'><img src="Images/BFHBusCard.png" alt='buscard' width="200" height=relative>
+         <h1>Bus. Card &amp; Letterhead</h1>
+         <h3>Designed logo and all collateral material for The Benjamin Franklin House, a boutique museum in London, England.</h3>
+         </div>
+
+        <div class='floating-box3'><img src='Images/BenRoykoCover.png' alt='royko' width='200' height=relative>
+        <h1>Book Cover</h1>
+        <h3>Designed book cover for an biography on an autistic teenager utilizing his photo and elements to portray the tulmultous life.</h3>
+        </div>
+
+       <div class='floating-box3'><img src='Images/BurhopsLables.png' alt='burhops' width='200' height=relative>
+        <h1>Bottle Labels</h1>
+        <h3>Handled production and client contact while working with outside designer.</h3>
+        </div>
+
+        <div class='floating-box3'><img id="myImage" onclick="changeImage()" src="images/Biosheet.png" width="200" height=relative>
+            <script>
+            function changeImage() {
+                var image = document.getElementById('myImage');
+                if (image.src.match("Images/Sletterhead.png")) {
+                    image.src = "Images/Biosheet.png";
+                } else {
+                    image.src = "Images/Sletterhead.png";
+                }
+            }
+            </script>
+                <h1>Bio Sheet &amp; Letterhead</h1>
+                 <h3>Designed logo and all collateral material for Singer Partners, a global investment firm.</h3>
+                 <h3><span style="color:orange;font-weight:normal">(Click the Image)</span></h3>
+            </div>
+
+            <div class='floating-box3'><div class="morph pic"><img src="Images/DiscoRulesCover.png" alt='disco'  width='200' height=relative></div>
+            <h1>Invitation</h1>
+             <h3><span style="color:orange;font-weight:normal">(Click the Image)</span></h3>
+            </div>
+
+        <div class="clear_float"></div><!--so footer works-->
+
+        <!--FOOTER OF PAGE--> 
+        <div id='footer'>Linda Schneider Singer Contact:&nbsp<a href="mailto:LcsProduction@comcast.net">LcsProduction@comcast.net</a></div>
+        
+    </div><!--End of purple_box-->
+    </div><!--End of Page Wrapper-->
+</body>
+</html>
