@@ -1,0 +1,188 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <script language="javascript" src="libraries/p5.dom.js"></script>
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this  body padding, margin line from Funk removes any default padding and style. you might only need one of these values set.-->
+
+  <style>
+      body {padding: 0; margin: 0;}
+      
+            /*Centers the page otherwise it gets all screwed up upon loading*/
+            #page_wrapper{
+                  width: 1200px;
+                  margin: 0px auto 0px auto;
+            }
+
+            body{
+                  background-image: url("Images/BackgroundFolderBlue.jpg");
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  }
+      
+            .column_30{
+                  float: left;
+                  width: 30%;
+              }
+
+            .column_70{
+                  float: left;
+                  width: 70%;
+              }
+
+              p.ex1 {
+                  font: 20px gillsans, sans-serif;
+                  color:#9999ff;
+                  height: 50px;
+                  position: absolute;
+              	  padding: 10px;
+                  top: 60px;
+                  width: 600px;
+                  height: 50px;
+              }
+
+              .ex2 {
+                  font: 32px gillsans, sans-serif;
+                  color: #9c9cc9;
+                  border-top: 3px orange solid;
+                  border-bottom: 3px orange solid;
+                  margin-top: 30px;
+                  padding: 10px;
+                  text-align: center;
+              }
+
+              .ex3 {
+                  font: 24px gillsans, sans-serif;
+                  text-align: center;
+                  margin-top: 0px;     
+              }
+
+              .center {
+                  margin: 90px 0px 0px 0px;
+                  width: 100%;
+                  padding: 10px 10px 0px 0px; /*I changed so line would bleed to left too.*/
+              }
+
+              .right {
+                 /*float: left;*/
+                  width: 150px;
+                  height: 100px;
+                  padding: 0px 80px 40px 50px;
+                  margin-left: 80px;
+                  margin-top: 20px;             
+              }
+
+              .video {
+                width: 300px;
+                margin-left: 30px;
+                margin-top: 10px;
+              }
+
+
+              /* unvisited link */
+              a:link {
+                  color: rgb(179, 0, 89);
+                  text-decoration: none;
+              }
+
+              /* visited link */
+              a:visited {
+                  color: orange;
+                  text-decoration: none;
+              }
+
+              /* mouse over link */
+              a:hover {
+                  color: rgb(179, 0, 89);
+              }
+
+              /* selected link */
+              a:active {
+                  color:#9090d5;
+              }
+
+              #footer {
+                  font: 20px gillsans, sans-serif;
+                  color:white;
+                  margin:0px 0px 0px 30px;
+                  margin-bottom: 20px;
+              }
+
+              #header {
+                  width: 150px;
+                  height: 60px;
+                  margin-top: 110px;
+                  margin-left: 120px;
+                  margin-bottom: 0px;
+              }
+
+              /*MORPH*/
+            .morph {
+              -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                   -o-transition: all 0.5s ease;
+                  -ms-transition: all 0.5s ease;
+                      transition: all 0.5s ease;
+            }
+
+            .morph:active {
+              border-radius: 100%;
+              -webkit-transform: rotate(360deg);
+                 -moz-transform: rotate(360deg);
+                   -o-transform: rotate(360deg);
+                  -ms-transform: rotate(360deg);
+                      transform: rotate(360deg);
+            }
+
+  </style>
+</head>
+
+  <body>
+      
+    <div id="page_wrapper">
+      
+      <!--LCS LOGO-->
+      <div id="header">
+        <img src="Images/lcs.svg" style="width:300px;height:auto;">
+      </div>
+
+      <div class='center'>
+          <div class='ex2'>Design, Branding <span style="color:rgb(179, 0, 89)">+ </span>Graphic Production
+        </div>
+       </div>
+   
+      <!--PRINT label link to Print Page and Mouseover type-->
+      <div class="column_30">
+        <div class='right'><div class='ex3'><a href="Print3_Art370.html">PRINT</a></div><img src='Images/SwirlPrint.png' alt='print' width='150' height=relative onmouseover="this.src='Images/printtype-mouseover.svg'"   onmouseout="this.src='Images/SwirlLogo.png'"></div>
+
+        <!--PORTFOLIO label mouseover type,click-rotate-->
+        <div class="right morph"><div class='ex3'><a href="#">PORTFOLIO</a></div><img src='Images/SwirlWebsite.png' alt='website' width='150' height=relative onmouseover="this.src='Images/portfoliotype-mouseover.svg'"   onmouseout="this.src='Images/SwirlLogo.png'">
+        </div>
+
+        <!--CONTACT label mouseover type & link to Bio page-->
+        <div class='right'><div class='ex3'><a href="Bio4_Art370.html">BIO &amp; CONTACT</a></div><img src='Images/SwirlLogo.png' alt='logo' width='150' height=relative onmouseover="this.src='Images/type-mouseover.svg'"   onmouseout="this.src='Images/SwirlLogo.png'">
+        </div>
+    </div><!--End of Column_30-->
+
+     <!--MOVIE-->   
+    <div class="column_70">
+        <div class="video">
+          <video width="170%" controls height="420px" autoplay loop>
+          <source src="Images/lcs_portfolio_movie.mov"  type="video/mp4">
+          <source src="Images/lcs_portfolio_movie.mov" type="video/ogg">
+          </video>
+        </div>
+        
+        <!--Footer copyright line and email link-->
+        <div id='footer'>Linda Schneider Singer&nbsp;&nbsp; Contact:&nbsp;<a href="mailto:LcsProduction@comcast.net">LcsProduction@comcast.net</a>
+        </div><!--End of column_70-->
+    </div><!--End of footer-->
+  
+    </div><!--End of Page Wrapper-->
+</body>
+</html>
+
+
